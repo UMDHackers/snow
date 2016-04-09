@@ -1,0 +1,54 @@
+<code>
+	var age, birthday;
+	<class "Person">
+		#no variable consturctor
+		<constructor>
+		   age = 0;       
+	   	   birthday = String.new;
+		</constructor>
+	
+		#with variable Consturctor
+		<constructor age, birthday>
+	           $current.age = age;
+	  	   $current.birthday = birthday;
+		</constructor>
+
+		#Get age
+		<function "getAge" ()>	  
+ 		   ret age;
+		</function>
+
+		#set the age of the user
+	     	<function "setAge" (age)>
+		  $current.age = age;
+	  	</function>
+	
+		#get the birthday
+		<fucntion name = "getBirthday" ()>
+	  	  ret birthday;
+		</function>
+		#set the birthday
+		<function "setBirthday"(birthday)>
+		  $current.birthday = birthday;
+		</function>
+	</class>
+	<main>
+	 var p1 = Person.new(), p2 = Person.new(23, "2/3/33"), x = 0;
+ 	 <for x -> 10, x = x + 1>
+	    <if (x%2 == 0)>
+	      p1.setAge(x);
+	     <elif(x%3 == 0)>
+	      p2.setAge(p1.getAge);
+	     <else>
+	      p1.setAge(23);
+	    </if>
+	 </for>
+	 var c = True;
+	 <while c>
+	  print("Yo!");
+	  c = False;
+	 </while>
+	 
+	</main>
+
+</code>
